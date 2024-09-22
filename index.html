@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+    .main{
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px;
+        gap: 10px;
+    }
+    .main>div{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .fo{
+        background-color: #F34620;
+        grid-column: 1 /span 2;
+    }
+    .six{
+        background-color: #FCC7CC;
+        grid-row: 0 /span 2;
+    }
+    .one{
+        background-color: #000DFE;
+    }
+    .fi{
+    background-color: #A03D2D;    
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="fo">4</div>
+        <div class="six">6</div>
+        <div class="one">1</div>
+        <div class="fi">5</div>
+    </div>
+</body>
+</html>
